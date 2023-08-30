@@ -1,0 +1,95 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "product_name": {
+      "type": "string"
+    },
+    "product_description": {
+      "type": "text"
+    },
+    "product_catergory": {
+      "type": "enumeration",
+      "enum": [
+        "MEN",
+        "WOMEN",
+        "GIRLS",
+        "BOYS",
+        "ACCESSORIES"
+      ]
+    },
+    "product_price": {
+      "type": "decimal"
+    },
+    "product_discount_price": {
+      "type": "decimal"
+    },
+    "product_rating": {
+      "type": "decimal"
+    },
+    "product_color": {
+      "type": "enumeration",
+      "enum": [
+        "RED",
+        "BLUE",
+        "GREEN",
+        "BLACK",
+        "WHITE",
+        "ORANGE",
+        "YELLOW",
+        "PURPLE"
+      ]
+    },
+    "product_size": {
+      "type": "enumeration",
+      "enum": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    "product_material": {
+      "type": "enumeration",
+      "enum": [
+        "Cotton",
+        "Denim",
+        "Leather",
+        "Linen",
+        "Silk",
+        "Wool",
+        "Synthetic Blends",
+        "Jersey Knit",
+        "Twill",
+        "Suede",
+        "Mesh",
+        "Knitwear",
+        "Nylon",
+        "Velvet",
+        "Rayon"
+      ]
+    },
+    "product_images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "product_sold_out": {
+      "type": "boolean"
+    }
+  }
+}
