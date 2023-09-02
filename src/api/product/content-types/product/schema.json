@@ -90,6 +90,12 @@
     },
     "product_sold_out": {
       "type": "boolean"
+    },
+    "orders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order.order",
+      "mappedBy": "products"
     }
   }
 }
