@@ -14,9 +14,8 @@
   "attributes": {
     "products": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::product.product",
-      "inversedBy": "orders"
+      "relation": "oneToMany",
+      "target": "api::product.product"
     },
     "customer": {
       "type": "relation",
